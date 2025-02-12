@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mission Matcha</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #f8f9fa;
+                padding: 50px;
+            }
+            .container {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                display: inline-block;
+            }
+            img {
+                width: 150px;
+                margin-bottom: 15px;
+            }
+            button {
+                padding: 10px 20px;
+                border: none;
+                background-color: #25D366;
+                color: white;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #1da851;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <img src="https://www.snixykitchen.com/wp-content/uploads/2018/01/Ultimate-Guide-to-Matcha-1.jpg" alt="Matcha Icon">
+            <h2>Mission Matcha 🍵</h2>
+            <p>Agent Fiffy, your mission (should you choose to accept it)...</p>
+            <p>Join me on a top-secret matcha café adventure. 😏</p>
+            <button onclick="openWhatsApp()">Accept Mission</button>
+        </div>
+    
+        <script>
+            function openWhatsApp() {
+                let myNumber = "601126203498"; // Your WhatsApp number
+                let message = encodeURIComponent("Mission accepted! What’s the itinerary?");
+                let whatsappLink = `https://wa.me/${myNumber}?text=${message}`;
+                window.location.href = whatsappLink;
+            }
+        </script>
+    
+    </body>
+    </html>
+    
+</body>
+</html>
