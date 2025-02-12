@@ -5,66 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<body
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Invitation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fffaf0;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: #fffcf7;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 400px;
+        }
+        h1 {
+            color: #4b2e39;
+        }
+        .tulip {
+            font-size: 50px;
+            animation: float 1.5s infinite alternate ease-in-out;
+        }
+        @keyframes float {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-10px); }
+        }
+        p {
+            color: #5c4033;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ff6b81;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff4757;
+        }
+    </style>
+</head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mission Matcha</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                background-color: #f8f9fa;
-                padding: 50px;
-            }
-            .container {
-                background: white;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-                display: inline-block;
-            }
-            img {
-                width: 150px;
-                margin-bottom: 15px;
-            }
-            button {
-                padding: 10px 20px;
-                border: none;
-                background-color: #25D366;
-                color: white;
-                font-size: 16px;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            button:hover {
-                background-color: #1da851;
-            }
-        </style>
-    </head>
-    <body>
-    
-        <div class="container">
-            <img src="https://www.snixykitchen.com/wp-content/uploads/2018/01/Ultimate-Guide-to-Matcha-1.jpg" alt="Matcha Icon">
-            <h2>Mission Matcha 🍵</h2>
-            <p>Agent Fiffy, your mission (should you choose to accept it)...</p>
-            <p>Join me on a top-secret matcha café adventure. 😏</p>
-            <button onclick="openWhatsApp()">Accept Mission</button>
-        </div>
-    
-        <script>
-            function openWhatsApp() {
-                let myNumber = "601126203498"; // Your WhatsApp number
-                let message = encodeURIComponent("Mission accepted! What’s the itinerary?");
-                let whatsappLink = `https://wa.me/${myNumber}?text=${message}`;
-                window.location.href = whatsappLink;
-            }
-        </script>
-    
-    </body>
-    </html>
-    
+
+    <div class="container">
+        <div class="tulip">🌷</div>
+        <h1>Hey Fiffy! 🍵</h1>
+        <p>Let's go for that matcha experience we talked about!</p>
+        <p>📍 <b>Softe, Menara Ilham</b></p>
+        <p>📆 <b>This Friday, after work</b></p>
+        <br>
+        <p>Click below to confirm your attendance! 🚀</p>
+        <br>
+        <a class="btn" href="https://wa.me/601126203498?text=Confirming%20attendance!%20See%20you%20there!%20😊" target="_blank">Confirm Attendance</a>
+        <br><br>
+        <div class="tulip">🌷</div>
+    </div>
+
+</body>
+</html>
+      
 </body>
 </html>
